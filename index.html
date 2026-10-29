@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Getting started with Werkbord</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --text: #1d2233;
+      --muted: #5b6275;
+      --accent: #4f46e5;
+      --accent-soft: #e0e7ff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #12141c;
+        --card: #1c1f2b;
+        --text: #eceef6;
+        --muted: #a3a9bd;
+        --accent: #818cf8;
+        --accent-soft: #2a2e4a;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 1.5rem;
+      background:
+        radial-gradient(circle at top left, var(--accent-soft), transparent 45%),
+        var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 36rem;
+      width: 100%;
+      background: var(--card);
+      border-radius: 16px;
+      padding: 2.5rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .eyebrow {
+      margin: 0 0 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    h1 {
+      margin: 0 0 1rem;
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      line-height: 1.15;
+    }
+
+    p {
+      margin: 0 0 1rem;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Werkbord</p>
+    <h1>I’m getting started with Werkbord</h1>
+    <p>This is my first page. Werkbord helped me set up this project, and this page is the first thing I built with it.</p>
+    <p><a href="README.md">Read the project README →</a></p>
+  </main>
+</body>
+</html>
